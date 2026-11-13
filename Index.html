@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grand Events - Professional Event Planning and Management">
+    <title>Grand Events | Make Every Moment Special</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+    
+</head>
+
+<body>
+
+<!-- =====================================
+     HEADER / NAVIGATION
+===================================== -->
+
+<header class="header">
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            Grand <span>Events.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#planners">Planners</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#booking" class="nav-btn">Book an Event</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- =====================================
+     1. HOME PAGE
+===================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+
+        <span class="eyebrow">WELCOME TO GRAND EVENTS</span>
+
+        <h1>
+            We Make Your
+            <span>Special Moments</span>
+            Unforgettable.
+        </h1>
+
+        <p>
+            From beautiful weddings to unforgettable celebrations,
+            we turn your dream events into extraordinary experiences.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">Book Your Event</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+
+        <div class="hero-note">
+            ✦ Creating Memories That Last Forever
+        </div>
+
+    </div>
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="intro section-padding">
+
+    <div class="container intro-grid">
+
+        <div class="intro-text">
+
+            <span class="eyebrow">ABOUT GRAND EVENTS</span>
+
+            <h2 class="section-title">
+                Every Celebration
+                Deserves Something
+                <span>Extraordinary.</span>
+            </h2>
+
+            <p>
+                Grand Events is an event planning and management
+                company dedicated to making every celebration
+                beautiful, memorable and stress-free.
+            </p>
+
+            <p>
+                We bring creativity, thoughtful planning and
+                attention to detail to every event we organize.
+            </p>
+
+            <a href="#about" class="text-link">Discover Our Story →</a>
+
+        </div>
+
+        <div class="intro-image">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900"
+                 alt="Luxury wedding decoration">
+        </div>
+
+    </div>
+</section>
+
+
+<!-- EVENT SEARCH -->
+
+<section class="event-search section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">FIND YOUR CELEBRATION</span>
+            <h2 class="section-title">What Are You <span>Planning?</span></h2>
+        </div>
+
+        <form id="eventSearchForm" class="search-form">
+
+            <input type="search"
+                   id="eventSearch"
+                   placeholder="Search wedding, birthday, engagement...">
+
+            <button type="submit" class="btn btn-primary">
+                Search Events
+            </button>
+
+        </form>
+
+        <p id="searchMessage" class="form-message" aria-live="polite"></p>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     2. SERVICES / EVENT CATEGORIES
+===================================== -->
+
+<section class="categories section-padding" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">WHAT WE CREATE</span>
+            <h2 class="section-title">Explore Our <span>Services</span></h2>
+            <p>Beautiful celebrations, thoughtfully planned for you.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <article class="category-card" data-category="wedding">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600"
+                     alt="Wedding event">
+
+                <div class="card-content">
+                    <h3>Wedding Events</h3>
+                    <p>Elegant weddings and unforgettable ceremonies.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Wedding">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Wedding">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="birthday">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600"
+                     alt="Birthday party">
+
+                <div class="card-content">
+                    <h3>Birthday Parties</h3>
+                    <p>Creative themes and joyful birthday celebrations.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Birthday">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Birthday">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="aqiqah">
+                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600"
+                     alt="Aqiqah event">
+
+                <div class="card-content">
+                    <h3>Aqiqah Ceremonies</h3>
+                    <p>Beautiful arrangements for your little one's special day.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Aqiqah">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Aqiqah">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="engagement">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600"
+                     alt="Engagement event">
+
+                <div class="card-content">
+                    <h3>Engagements</h3>
+                    <p>Romantic setups for the beginning of forever.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Engagement">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Engagement">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600"
+                     alt="Bridal shower">
+
+                <div class="card-content">
+                    <h3>Bridal Showers</h3>
+                    <p>Charming decorations and memorable gatherings.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Bridal Shower">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Bridal Shower">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="corporate">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600"
+                     alt="Corporate event">
+
+                <div class="card-content">
+                    <h3>Corporate Events</h3>
+                    <p>Professional event planning for businesses.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Corporate">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Corporate">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="baby">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600"
+                     alt="Baby shower">
+
+                <div class="card-content">
+                    <h3>Baby Showers</h3>
+                    <p>Sweet and beautiful celebrations for new beginnings.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Baby Shower">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Baby Shower">Book This Event</a>
+                </div>
+            </article>
+
+
+            <article class="category-card" data-category="other">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600"
+                     alt="Special celebrations">
+
+                <div class="card-content">
+                    <h3>Other Celebrations</h3>
+                    <p>Customized arrangements for every special occasion.</p>
+                    <a href="#event-details" class="text-link event-detail-link"
+                       data-event="Other Celebration">View Details →</a>
+                    <a href="#booking" class="small-btn" data-event="Other Celebration">Book This Event</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =====================================
+     3. EVENT DETAIL
+===================================== -->
+
+<section class="event-details section-padding" id="event-details">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">EXPLORE THE DETAILS</span>
+            <h2 class="section-title">Your Event, <span>Your Way</span></h2>
+        </div>
+
+        <div class="event-detail-content">
+
+            <div class="detail-image">
+                <img id="detailImage"
+                     src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900"
+                     alt="Event decoration">
+            </div>
+
+            <div class="detail-information">
+
+                <h3 id="detailTitle">Wedding Events</h3>
+
+                <p id="detailDescription">
+                    We create beautiful wedding celebrations
+                    with elegant decorations and complete planning.
+                </p>
+
+                <h4>Our Services Include</h4>
+
+                <ul id="detailServices">
+                    <li>Stage and venue decoration</li>
+                    <li>Bridal entrance arrangement</li>
+                    <li>Lighting and floral decoration</li>
+                    <li>Catering coordination</li>
+                    <li>Photography arrangements</li>
+                </ul>
+
+                <h4>Available Options</h4>
+
+                <p>Custom themes, venue selection, catering,
+                   photography and additional services.</p>
+
+                <a href="#booking" class="btn btn-primary">Book This Event</a>
+
+                <a href="#contact" class="text-link">Request a Custom Quote →</a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =====================================
+     4. ABOUT US
+===================================== -->
+
+<section class="about section-padding" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">GET TO KNOW US</span>
+            <h2 class="section-title">Our Story & <span>Our Passion</span></h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=900"
+                     alt="Event planning team">
+            </div>
+
+            <div class="about-content">
+
+                <h3>We Turn Your Dreams Into Beautiful Celebrations.</h3>
+
+                <p>
+                    Grand Events was created with one simple idea:
+                    every special moment deserves thoughtful planning
+                    and beautiful memories.
+                </p>
+
+                <p>
+                    Our team focuses on creativity, organization
+                    and customer satisfaction to make every event
+                    a special experience.
+                </p>
+
+                <h4>Our Mission</h4>
+                <p>To create memorable celebrations through
+                   creativity and professional event management.</p>
+
+                <h4>Our Vision</h4>
+                <p>To become a trusted name in event planning
+                   and celebration management.</p>
+
+                <h4>Our Values</h4>
+                <p>Creativity, quality, honesty, commitment
+                   and customer satisfaction.</p>
+
+                <a href="#booking" class="btn btn-primary">Plan With Us</a>
+
+            </div>
+        </div>
+
+
+        <!-- OUR PROCESS -->
+
+        <div class="process-section">
+
+            <h3 class="sub-title">How We Work</h3>
+
+            <div class="process-grid">
+
+                <div class="process-card">
+                    <span>01</span>
+                    <h4>Consultation</h4>
+                    <p>We understand your event ideas and requirements.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>02</span>
+                    <h4>Planning</h4>
+                    <p>We prepare a customized event plan.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>03</span>
+                    <h4>Preparation</h4>
+                    <p>We arrange decoration, venue and other services.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
+                    <h4>Celebration</h4>
+                    <p>We manage your event and create beautiful memories.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     5. EVENT PACKAGES & PRICING
+===================================== -->
+
+<section class="packages section-padding" id="packages">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">OUR EVENT PACKAGES</span>
+            <h2 class="section-title">Choose Your <span>Perfect Package</span></h2>
+            <p>Flexible event arrangements for different budgets.</p>
+        </div>
+
+
+        <div class="package-grid">
+
+            <article class="package-card">
+
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600"
+                     alt="Basic package">
+
+                <div class="package-content">
+                    <span class="package-label">ESSENTIAL</span>
+                    <h3>Basic Package</h3>
+                    <h4>Custom Quote</h4>
+
+                    <ul>
+                        <li>Simple event decoration</li>
+                        <li>Basic seating arrangement</li>
+                        <li>Essential event setup</li>
+                        <li>Basic coordination</li>
+                        <li>Customized event theme</li>
+                    </ul>
+
+                    <a href="#booking" class="btn btn-secondary package-btn"
+                       data-package="Basic Package">Choose Package</a>
+                </div>
+            </article>
+
+
+            <article class="package-card featured">
+
+                <div class="popular-tag">POPULAR</div>
+
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600"
+                     alt="Standard package">
+
+                <div class="package-content">
+                    <span class="package-label">CLASSIC</span>
+                    <h3>Standard Package</h3>
+                    <h4>Custom Quote</h4>
+
+                    <ul>
+                        <li>Elegant event decoration</li>
+                        <li>Seating arrangements</li>
+                        <li>Lighting setup</li>
+                        <li>Event coordination</li>
+                        <li>Basic photography options</li>
+                    </ul>
+
+                    <a href="#booking" class="btn btn-primary package-btn"
+                       data-package="Standard Package">Choose Package</a>
+                </div>
+            </article>
+
+
+            <article class="package-card">
+
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600"
+                     alt="Premium package">
+
+                <div class="package-content">
+                    <span class="package-label">PREMIUM</span>
+                    <h3>Premium Package</h3>
+                    <h4>Custom Quote</h4>
+
+                    <ul>
+                        <li>Premium decoration</li>
+                        <li>Customized theme</li>
+                        <li>Venue coordination</li>
+                        <li>Photography arrangements</li>
+                        <li>Complete event management</li>
+                    </ul>
+
+                    <a href="#booking" class="btn btn-secondary package-btn"
+                       data-package="Premium Package">Choose Package</a>
+                </div>
+            </article>
+
+
+            <article class="package-card">
+
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600"
+                     alt="Luxury package">
+
+                <div class="package-content">
+                    <span class="package-label">EXCLUSIVE</span>
+                    <h3>Luxury Package</h3>
+                    <h4>Custom Quote</h4>
+
+                    <ul>
+                        <li>Luxury customized decoration</li>
+                        <li>Exclusive venue arrangements</li>
+                        <li>Premium catering options</li>
+                        <li>Professional photography</li>
+                        <li>Complete event management</li>
+                    </ul>
+
+                    <a href="#booking" class="btn btn-secondary package-btn"
+                       data-package="Luxury Package">Choose Package</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="package-note">
+            * Final prices depend on event type, location,
+            guest count and selected services.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     6. FIND AN EVENT PLANNER
+===================================== -->
+
+<section class="planners section-padding" id="planners">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">MEET OUR PLANNERS</span>
+            <h2 class="section-title">Find Your Perfect <span>Event Planner</span></h2>
+            <p>Explore planners according to your event requirements.</p>
+        </div>
+
+
+        <div class="planner-search">
+
+            <input type="search" id="plannerSearch"
+                   placeholder="Search planner name...">
+
+            <select id="plannerSpecialty">
+                <option value="">All Specialties</option>
+                <option value="Wedding">Wedding</option>
+                
+                </body>
+                </head>
